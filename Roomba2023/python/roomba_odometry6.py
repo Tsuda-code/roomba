@@ -182,7 +182,7 @@ def main():
         prev_right_enc = right_enc
         last_time = current_time
 
-
+        #UDP通信で送信
         Send_Data_Binari = struct.pack( "fffffff",
                                         elapsed_time,
                                         x,
@@ -199,6 +199,6 @@ def main():
 
         # データを保存
 
-        time.sleep(0.1)  # 0.001秒待機
+        time.sleep(0.1)  # 0.1秒待機
 
 main()
